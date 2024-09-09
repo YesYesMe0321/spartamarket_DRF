@@ -4,4 +4,5 @@ from .models import Product
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ['id', 'title', 'description', 'created_at']
+        read_only_fields = ['user', 'created_at']
