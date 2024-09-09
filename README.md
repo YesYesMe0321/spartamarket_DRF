@@ -12,11 +12,11 @@
 
   <pre>
   {
-    "username": "testuser",
+    "username": "test",
     "email": "test@google.com",
-    "password": "password123",
-    "name": "홍길동",
-    "nickname": "길동이",
+    "password": "ps_test",
+    "name": "류",
+    "nickname": "YesYesMe",
     "birthdate": "1990-01-01"
   }
   </pre>
@@ -27,7 +27,7 @@
   <pre>
   {
     "id": 1,
-    "username": "testuser",
+    "username": "test",
     "email": "test@google.com"
   }
   </pre>
@@ -48,8 +48,8 @@
 
   <pre>
   {
-    "username": "testuser",
-    "password": "password123"
+    "username": "test",
+    "password": "ps_test"
   }
   </pre>
 
@@ -57,10 +57,10 @@
 - Body (JSON 형식)
 
   <pre>
-  {
-    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-  }
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyNTk2MzIwMCwiaWF0IjoxNzI1ODc2ODAwLCJqdGkiOiI1MzI0ZjU3MzFmZWI0MDY2YWIyYzJjYWI1YmFlNTMzZiIsInVzZXJfaWQiOjV9.C8HRfKB9-jIH4oZvukumuMnhG4UyPIizfUOBfdMz-Xs",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1ODc3MTAwLCJpYXQiOjE3MjU4NzY4MDAsImp0aSI6Ijc1ZjdmMmJjMTU2ZDQ1MDQ5NDkyMWZhZjJkNTRjYzIzIiwidXNlcl9pZCI6NX0.vG1jGw0hItPgpUubSdk4yQRZQzfpvCj838olI7dGgPM"
+}
   </pre>
 
 #### 상태 코드 (Status Codes):
@@ -79,7 +79,7 @@
   - `Authorization: Bearer <ACCESS_TOKEN>`
   
 - URL Path Parameter:
-  - `<username>`: 조회하려는 사용자의 이름 (예: `testuser`)
+  - `<username>`: 조회하려는 사용자의 이름 (예: `test`)
 
 #### 응답 형식 (Response Format):
 - Body (JSON 형식)
@@ -87,10 +87,10 @@
   <pre>
   {
     "id": 1,
-    "username": "testuser",
+    "username": "test",
     "email": "test@google.com",
-    "name": "홍길동",
-    "nickname": "길동이",
+    "name": "류",
+    "nickname": "YesYesMe",
     "birthdate": "1990-01-01"
   }
   </pre>
